@@ -1,14 +1,4 @@
-{% comment %} 
-{% load static %}
-{% extends "base.html" %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        /* * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -16,7 +6,7 @@
         }
 
         nav {
-            background-color: #1c2438;
+            background-color: #222939;
             padding: 15px 40px;
             display: flex;
             justify-content: space-between;
@@ -44,22 +34,4 @@
 
         nav ul li a:hover {
             color: #38bdf8;
-        } */
-    </style>
-</head>
-<body>
-
-    <nav>
-        <div class="logo">Saad Riaz</div>
-        <ul>
-            <li><a href="/home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="/skill.html">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-</body>
-</html>
- {% endcomment %}
+        }

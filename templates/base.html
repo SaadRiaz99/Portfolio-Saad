@@ -1,20 +1,36 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'navbar.css' %}">
 
-    <title>{% block title %}My Portfolio{% endblock %}</title>
+    <title>{% block title %}Portfolio{% endblock title %}</title>
 
-    <link rel="stylesheet" href="{% static '/static/homestyle.css' %}">
+    
 </head>
+{% block head %}
+{% endblock head %}
 <body>
 
-    {% include "navbar.html" %}
+<nav>
+    <div class="logo">Saad Riaz</div>
+    <ul>
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="">Skills</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</nav>
 
-    {% block content %}
-    {% endblock %}
+{% block body %}
+{% endblock body %}
 
 </body>
 </html>

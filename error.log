@@ -1,0 +1,15 @@
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'admin' isn't unique. You may not be able to reverse all URLs in this namespace
+
+System check identified 1 issue (0 silenced).
+[25/Jan/2026 17:49:44] "GET / HTTP/1.1" 200 974
+[25/Jan/2026 17:49:44] "GET /static/static/homestyle.css HTTP/1.1" 404 1874
+[25/Jan/2026 17:49:51] "GET / HTTP/1.1" 200 974
+[25/Jan/2026 17:49:51] "GET /static/static/homestyle.css HTTP/1.1" 404 1874
+[25/Jan/2026 17:50:36] "GET / HTTP/1.1" 200 974
+[25/Jan/2026 17:50:36] "GET /static/static/hoemstyle.css HTTP/1.1" 404 1874
+[25/Jan/2026 17:50:37] "GET / HTTP/1.1" 200 974
+[25/Jan/2026 17:50:37] "GET /static/static/hoemstyle.css HTTP/1.1" 404 1874

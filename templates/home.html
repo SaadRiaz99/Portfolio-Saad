@@ -1,18 +1,39 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
 Home
-{% endblock %}
+{% endblock title %}
 
-{% block content %}
-<div class="container-Home">
-    <div class="home-text">
+{% block head %}
+<link rel="stylesheet" href="{% static 'homepage.css' %}">
+{% endblock head %}
+
+{% block body %}
+
+
+<section class="homecontainer">
+    <div class="home-left">
+        <h1>Hi, I'm <span>Saad Bin Riaz</span></h1>
+        <h3>Aspiring AI Engineer</h3>
+
         <p>
-            I study Artificial Intelligence at Sindh Madressatul Islam University (SMIU)
-            and I’m passionate about AI, programming, and building real-world projects.
-            Currently learning Python, JavaScript, Django & AI fundamentals.
-            Aspiring AI Engineer
+            I study <strong>Artificial Intelligence</strong> at
+            <strong>Sindh Madressatul Islam University (SMIU)</strong>.
+            I’m passionate about AI, programming, and building real-world projects.
+            <br><br>
+            Currently learning:
+            <strong>Python, JavaScript, Django & AI Fundamentals</strong>
         </p>
+
+        <div class="btn-group">
+            <a href="" class="btn">About Me</a>
+            <a href="" class="btn btn-outline">Projects</a>
+        </div>
     </div>
-</div>
-{% endblock %}
+
+    <div class="home-right">
+        <img src="" alt="Profile" class="profile">
+    </div>
+</section>
+{% endblock body %}

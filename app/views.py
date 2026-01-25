@@ -6,3 +6,9 @@ def Home(request):
 
 def navbar(request):
     return render(request , "navbar.html" )
+
+def about(request):
+    return render(request , "about.html" )
+
+def skill(request):
+    return render(request , "skill.html" )

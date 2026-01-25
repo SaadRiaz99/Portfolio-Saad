@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Skills
+{% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'skills.css' %}">
+{% endblock head %}
+
+{% block body %}
+<section id="skills" class="skills-section">
+    <div class="section-header">
+        <h2>My Skills</h2>
+        <p>Here are some of the programming languages, tools, and AI skills I work with.</p>
+    </div>
+
+    <div class="skills-grid">
+        <!-- Skill 1 -->
+        <div class="skill-card">
+            <h3>Python</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 90%;"></div>
+            </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card">
+            <h3>Django</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 80%;"></div>
+            </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 25%;"></div>
+            </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card">
+            <h3>AI & Machine Learning</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 5%;"></div>
+            </div>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill-card">
+            <h3>SQL / SQLite</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 0%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock body %}
