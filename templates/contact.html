@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Skills
+{% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'contact.css' %}">
+{% endblock head %}
+{% block body %}
+
+
+<section class="contact-section">
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <p>
+      I'm always open to discussing new projects, ideas, or opportunities.
+      Feel free to message me!
+    </p>
+
+    <div class="contact-wrapper">
+      
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        <p><strong>Email:</strong> malik.saad.riaz.96@gmail.com</p>
+        <p><strong>Location:</strong> Karachi,Pakistan</p>
+
+        <div class="social-links">
+          <a href="https://github.com/SaadRiaz99">GitHub</a>
+          <a href="https://www.linkedin.com/in/saad-bin-riaz-56b802374/">LinkedIn</a>
+          <p>Whatsapp-(+92314-1088892)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock body %}

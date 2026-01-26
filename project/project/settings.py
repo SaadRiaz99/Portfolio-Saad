@@ -25,9 +25,9 @@ sys.path.insert(0, str(BASE_DIR))
 SECRET_KEY = 'django-insecure-&!7@bz+bcr+1_yz365w=&vbyo@lepptf=6j!6r3&yd5jm^=m^5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
