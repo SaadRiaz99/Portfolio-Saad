@@ -15,6 +15,7 @@
     padding: 60px 80px;
     background: linear-gradient(135deg, #020617, #020617);
     color: #e5e7eb;
+    min-height: 100vh;
 }
 
 
