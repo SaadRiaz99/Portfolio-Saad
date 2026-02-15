@@ -1,9 +1,9 @@
 .contact-section {
   padding: 80px 20px;
-  background-color: #0f172a;
   width: 100%;
   min-height: 100vh;
   color: #e5e7eb;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/static/photos/progile.jpg') center/cover no-repeat;
 }
 
 .contact-section h2 {

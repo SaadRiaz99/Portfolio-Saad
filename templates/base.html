@@ -24,11 +24,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="/skill.html">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'skill' %}">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </div>
     </div>

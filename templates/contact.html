@@ -10,7 +10,6 @@ Skills
 {% endblock head %}
 {% block body %}
 
-
 <section class="contact-section">
   <div class="container">
     <h2>Get in Touch</h2>
@@ -21,10 +20,19 @@ Skills
 
     <div class="contact-wrapper">
       
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="5" placeholder="Your Message" required></textarea>
+      {% if messages %}
+      <div>
+        {% for message in messages %}
+          <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">{{ message }}</div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <form class="contact-form" method="post" action="{% url 'contact' %}">
+        {% csrf_token %}
+        <input name="name" type="text" placeholder="Your Name" required>
+        <input name="email" type="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
 
