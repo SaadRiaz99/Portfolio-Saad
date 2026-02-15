@@ -1,8 +1,8 @@
 .skills-section {
     min-height: 100vh;
     padding: 80px 50px;
-    background-color: #0f172a;
     color: #e5e7eb;
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/static/photos/progile.jpg') center/cover no-repeat;
 }
 
 .section-header h2 {
