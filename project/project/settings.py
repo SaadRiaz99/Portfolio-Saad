@@ -22,12 +22,13 @@ sys.path.insert(0, str(BASE_DIR))
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-&!7@bz+bcr+1_yz365w=&vbyo@lepptf=6j!6r3&yd5jm^=m^5'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-&!7@bz+bcr+1_yz365w=&vbyo@lepptf=6j!6r3&yd5jm^=m^5')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['*']
+# In production set DJANGO_ALLOWED_HOSTS (comma-separated). Default is '*'.
+ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', '*').split(',')
 
 
 # Application definition
